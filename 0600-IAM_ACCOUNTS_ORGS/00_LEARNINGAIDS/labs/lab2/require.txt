@@ -1,0 +1,5 @@
+1. Create 2 s3 buckets Dev and DevOps
+2. Create User group (Developer) allow Dev but deny DevOps
+3. Add 2 users Liem and Nhat to Developer group
+4. Update Developer group policy to allow exceptional user Liem to
+    access DevOps

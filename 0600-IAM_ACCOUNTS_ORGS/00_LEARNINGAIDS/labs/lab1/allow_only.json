@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+       {
+          "Sid": "AllowSpecificBucketAccess",
+          "Effect": "Allow",
+          "Action": [
+             "s3:*"
+          ],
+          "Resource": [
+             "arn:aws:s3:::lab1-infa-catpics-nxrrngnmceru",
+             "arn:aws:s3:::lab1-infa-catpics-nxrrngnmceru/*"
+          ]
+       },
+       {
+          "Sid": "AllowListBuckets",
+          "Effect": "Allow",
+          "Action": "s3:ListAllMyBuckets",
+          "Resource": "*"
+       }
+    ]
+ }

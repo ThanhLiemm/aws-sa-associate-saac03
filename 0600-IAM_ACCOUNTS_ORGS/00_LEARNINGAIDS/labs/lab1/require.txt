@@ -1,0 +1,13 @@
+1. Use CloudFormation + demo_cfn.yaml to create
+    a. User Sally with only change password policy
+    b. Create S3 buckets: catpics, animalpics
+    c. Create manage policy: allow s3 && deny (catpics && catpics/*)
+2. Login with Sally IAM user and go through common services to check permission
+3. Create inline policy
+    a. Using s3_fulladmin.json to create inline policy for sally
+    b. Go to check permission all in s3 buckets
+4. Create add manage policy
+    a. Remove inline policy in sally user
+    b. Search allow_and_deny policy (created by cloudformation)
+    c. Check s3 policy
+5. Clear all resoure by delete cloudformation stack or manual if it fail
